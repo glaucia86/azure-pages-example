@@ -34,8 +34,8 @@ az group create \
 }
 ```
 5. Update the following properties in the `payload.json`:
-  - `repositoryUrl`: The URL of the GitHub repository
-  - `repositoryToken`: The personal GitHub access token
+  - `repositoryUrl`: The URL of the GitHub repository. 
+  - `repositoryToken`: The personal GitHub access token ([create one here](https://github.com/settings/tokens)). **Make sure to grant "repo, workflow, and admin:public_key (read)"**
 5. Go ahead and create a static site resource (replace `$SUBSCRIPTION_ID` and `$RESOURCE` with your own values): 
 ```bash
 az rest \
